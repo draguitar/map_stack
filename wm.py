@@ -57,17 +57,3 @@ for k in range(1,12):
     df.to_csv(f'33demo/map_{k}.csv', index = False, header=False)
     draw(df)
     plt.savefig(f"33demo/map_{k}.png", dpi=120)
-    
-
-
-# %%    
-for k in range(1,13):
-    df = pd.read_csv(f'33demo/map_{k}.csv',header=None)
-    draw(df)
-    plt.savefig(f"33demo/map_{k}.png", dpi=100)
-    
-# %%   
-df = pd.read_csv(f'ddd/map.csv',header=None)
-draw(df)
-plt.savefig(f"ddd/map.png", dpi=100)
-# %% 
