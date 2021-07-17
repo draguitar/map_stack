@@ -46,18 +46,6 @@ for k in range(25):
     df.to_csv(f'mapfile/map_{k}.csv', index = False, header=False)
     draw(df)
     plt.savefig(f"mapfile/map_{k}.png", dpi=120)
-# %%
-# import glob
-# import os
-# ls = glob.glob('chamber/*.csv')
-
-# for l in ls:
-#     df = pd.read_csv(l, header=None)
-#     filename = os.path.basename(l).split(".")[0]
-#     draw(df)
-#     plt.savefig(f"demo/{filename}.png", dpi=120)
-    
-# %%    
 
 for k in range(1,12):
     df = pd.read_csv('33.csv',header=None)
@@ -83,7 +71,3 @@ df = pd.read_csv(f'ddd/map.csv',header=None)
 draw(df)
 plt.savefig(f"ddd/map.png", dpi=100)
 # %% 
-amount = -1
-assert amount > 0 ,'要大於0'
-
-# %%
