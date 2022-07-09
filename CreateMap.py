@@ -49,7 +49,7 @@ def draw_mutipleclasses(data, filename):
                 cbar=False
                 )
     ax.set_title('',  fontsize=20)
-    plt.savefig(f"{filename}.png", dpi=120)
+    plt.savefig(filename, dpi=120)
 
 def replace_data(data, src, dist):
     data[data == src] = dist
@@ -58,16 +58,16 @@ def replace_data(data, src, dist):
 
 if __name__ == "__main__":
     draw_oneclass(df.values)
-    draw_mutipleclasses(df2.values, 'eee')
+    draw_mutipleclasses(df2.values, 'eee.png')
     # 保留2，其餘轉為1
     # f = replace_data(df2.values, 3, 1)
     # f = replace_data(f, 4, 1)
-    # draw_mutipleclasses(f, 'fff')
+    # draw_mutipleclasses(f, 'fff.png')
     # 保留3，其餘轉為1
     # g = replace_data(df2.values, 2, 1)
     # g = replace_data(g, 4, 1)
-    # draw_mutipleclasses(g, 'ggg')
+    # draw_mutipleclasses(g, 'ggg.png')
     # 保留4，其餘轉為1
     h = replace_data(df2.values, 2, 1)
     h = replace_data(h, 3, 1)
-    draw_mutipleclasses(h, 'hhh')
+    draw_mutipleclasses(h, 'hhh.png')
