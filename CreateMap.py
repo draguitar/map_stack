@@ -18,7 +18,7 @@ def draw_oneclass(data):
     sns.set(font_scale=1.5)
     fig, ax = plt.subplots(figsize=(10,10))
     # cmap = sns.color_palette("Pastel2", 3)
-    cmap = mcolors.LinearSegmentedColormap.from_list("n",['white', '#e3e3e3', 'red'])
+    cmap = mcolors.LinearSegmentedColormap.from_list("n",['white', '#c9ff9b', 'red'])
     sns.heatmap(data,
                 center=1,
                 cmap=cmap,
@@ -37,7 +37,7 @@ def draw_mutipleclasses(data, filename):
     sns.set(font_scale=1.5)
     fig, ax = plt.subplots(figsize=(10,10))
     # cmap = sns.color_palette("Pastel2", 3)
-    cmap = mcolors.ListedColormap(['white', '#e3e3e3', 'red', '#4872db', '#6e19c2'])
+    cmap = mcolors.ListedColormap(['white', '#c9ff9b', 'red', '#4872db', '#6e19c2'])
     sns.heatmap(data,
                 center=2,
                 # cmap= 'RdBu',
