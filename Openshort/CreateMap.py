@@ -7,8 +7,8 @@ import seaborn as sns
 import matplotlib.colors as mcolors
 import pandas as pd
 
-df = pd.read_csv(r"Openshort\1.csv", header=None)
-df2 = pd.read_csv(r"Openshort\多類型.csv", header=None)
+df = pd.read_csv(r".\1.csv", header=None)
+df2 = pd.read_csv(r".\多類型.csv", header=None)
 
 
 
