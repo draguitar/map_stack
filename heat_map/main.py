@@ -15,7 +15,8 @@ def draw_rawmap(data, folder, imgname):
     sns.set(font_scale=1.5)
     fig, ax = plt.subplots(figsize=(10,10))
     # cmap = sns.color_palette("Pastel2", 3)
-    cmap = mcolors.LinearSegmentedColormap.from_list("n",['white', '#7cfc00', 'red'])
+    # 淺綠色
+    cmap = mcolors.LinearSegmentedColormap.from_list("n",['white', '#98fb98', 'red'])
     sns.heatmap(data,
                 center=1,
                 cmap=cmap,
